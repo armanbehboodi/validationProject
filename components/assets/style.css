@@ -1,0 +1,132 @@
+
+/* for prevent size changing when we use padding */
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    direction: ltr;
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    width: 25%;
+    height: 75%;
+    padding: 2% 3%;
+    border: 1px solid #DBDBDB;
+    box-shadow: 20px 25px 50px #969696;
+}
+.main__text{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 0 1em 0;
+}
+.main__formInput{
+    width: 100%;
+    height: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-left: 10px;
+    border: 2px solid #E1E1E1;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+.main__formInput:focus{
+    outline: none !important;
+    border: 2px solid gray;
+}
+.main__formLabel{
+    color: gray;
+}
+.main__formAlert{
+    margin: 0 0 0.5em 0;
+    color: #FF2222;
+    font-size: 14px;
+    opacity: 0;
+}
+.main__submit{
+    width: 100%;
+    height: 35px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #58A4FF;
+    color: white;
+    border-radius: 4px;
+    border: 0;
+}
+.valid{
+    border: 2px solid green !important;
+}
+.invalid{
+    border: 2px solid #FF2222;
+}
+
+
+/* responsive */
+
+
+@media screen and (max-width: 1200px){
+    div.main{
+        width: 30%;
+        height: 77%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    div.main{
+        width: 35%;
+        height: 84%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    div.main{
+        width: 40%;
+        height: 83%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    div.main{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    div.main{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    div.main{
+        width: 70%;
+        height: 82%;
+        padding: 3% 5%;
+    }
+}
+
+@media screen and (max-width: 350px){
+    div.main{
+        width: 80%;
+        height: 83%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    div.main{
+        width: 90%;
+        height: 82%;
+    }
+    p.main__formAlert{
+        font-size: 13px;
+    }
+}
